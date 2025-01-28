@@ -1,0 +1,627 @@
+
+<!-- Set up the Tabs -->
+<input type="radio" class="sheet-tab sheet-tab1" name="attr_core-tab" value="1" title="Attributes & Abilities" checked="checked"/> 
+    <span class="sheet-tab sheet-tab1" style='line-height: 20px;'>Attributes &<br> Abilities</span>
+<input type="radio" class="sheet-tab sheet-tab2" name="attr_core-tab" value="2" title="Advantages" /> 
+    <span class="sheet-tab sheet-tab2" style='line-height: 40px;'>Advantages</span>
+<input type="radio" class="sheet-tab sheet-tab3" name="attr_core-tab" value="3" title="Merits & Flaws" /> 
+    <span class="sheet-tab sheet-tab3" style='line-height: 20px;'>Merits &<br>Flaws</span>
+<input type="radio" class="sheet-tab sheet-tab4" name="attr_core-tab" value="4" title="Combat & Gear" /> 
+    <span class="sheet-tab sheet-tab4" style='line-height: 20px;'>Combat & <br>Gear</span>
+<input type="radio" class="sheet-tab sheet-tab99" name="attr_core-tab" value="99" title="All" />
+    <span class="sheet-tab sheet-tab99" style='line-height: 40px;'>All</span>
+<!-- End Tab setup -->
+<!-- Tab1 -->
+<div class="sheet-section-1">
+    <div class="sheet-tabbed-panel">
+    <div class='sheet-3colrow'>
+        <div class="sheet-col">
+            <br><br><br><br><br><br><br><br>
+            </div>
+            <div class="sheet-col">
+                <br><br><br><br><br><br>
+            </div>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" class="sheet-textbox" name="attr_name" /></td>
+                </tr>
+                <tr>
+                    <td>Origin:</td>
+                    <td><input type="text" class="sheet-textbox" name="attr_origin" /></td>
+                </tr>
+                <tr>
+                    <td>Allegiance:</td>
+                    <td><input type="text" class="sheet-textbox" name="attr_allegiance" /></td>
+                </tr>
+                <tr>
+                    <td>Role:</td>
+                    <td><input type="text" class="sheet-textbox"
+                    name="attr_role" /></td>
+                </tr>
+            </table>
+        </div>
+        <div class="sheet-col">
+            <table>
+                <tr>
+                    <td>Player:</td>
+                    <td><input type="text" class="sheet-textbox" name="attr_player"/></td>
+                </tr>
+                <tr>
+                    <td>Series:</td>
+                    <td><input type="text" class="sheet-textbox"
+                    name="attr_series" /></td>
+                </tr>
+                <tr>
+                    <td>Inspiration:</td>
+                    <td><input type="text" class="sheet-textbox"
+                    name="attr_inspiration" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr/>
+    <div class="sheet-center" style="width:100%"><h2>Skills</h2></div>
+    <table style="width:100%">
+        <tr>
+            <th><button type="roll" class="sheet-skill" value="/e rolls Artistry! [[ { (@{Artistry} + ?{Modifier?|0})d10}>8 ]]">Artistry</button></th>
+            <td colspan="2">
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Artistry" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Artistry" value="1" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Artistry" value="2" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Artistry" value="3" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Artistry" value="4" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Artistry" value="5" /><span></span>
+            </td>
+            <td><input type="checkbox" class="sheet-bigcheck" name="attr_Artistry-box" value="1"/><span></span></td>
+            
+            <th><button type="roll" class="sheet-skill" value="/e rolls Athletics! [[ { (@{Athletics} + ?{Modifier?|0})d10}>8 ]]">Athletics</button></th>
+            <td colspan="2">
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Athletics" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Athletics" value="1" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Athletics" value="2" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Athletics" value="3" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Athletics" value="4" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Athletics" value="5" /><span></span>
+            </td>
+            <td><input type="checkbox" class="sheet-bigcheck" name="attr_Athletics-box" value="1"/><span></span></td>
+
+            <th><button type="roll" class="sheet-skill" value="/e rolls Close Combat! [[ { (@{Close Combat} + ?{Modifier?|0})d10}>8 ]]">Close Combat</button></th>
+            <td colspan="2">
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Close_Combat" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Close_Combat" value="1" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Close_Combat" value="2" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Close_Combat" value="3" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Close_Combat" value="4" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Close_Combat" value="5" /><span></span>
+            </td>
+            <td><input type="checkbox" class="sheet-bigcheck" name="attr_Close_Combat-box" value="1"/><span></span></td>
+            </tr>
+            <tr>
+
+            <th><button type="roll" class="sheet-skill" value="/e rolls Culture! [[ { (@{Culture} + ?{Modifier?|0})d10}>8 ]]">Culture</button></th>
+            <td colspan="2">
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Culture" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Culture" value="1" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Culture" value="2" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Culture" value="3" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Culture" value="4" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Culture" value="5" /><span></span>
+            </td>
+            <td><input type="checkbox" class="sheet-bigcheck" name="attr_Culture-box" value="1"/><span></span></td>
+
+            <th><button type="roll" class="sheet-skill" value="/e rolls Empathy! [[ { (@{Empathy} + ?{Modifier?|0})d10}>8 ]]">Empathy</button></th>
+            <td colspan="2">
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Empathy" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Empathy" value="1" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Empathy" value="2" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Empathy" value="3" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Empathy" value="4" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Empathy" value="5" /><span></span>&nbsp;
+            </td>
+            <td><input type="checkbox" class="sheet-bigcheck" name="attr_Empathy-box" value="1"/><span></span></td>
+
+            <th><button type="roll" class="sheet-skill" value="/e rolls Enigmas! [[ { (@{Enigmas} + ?{Modifier?|0})d10}>8 ]]">Enigmas</button></th>
+            <td colspan="2">
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Enigmas" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Enigmas" value="1" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Enigmas" value="2" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Enigmas" value="3" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Enigmas" value="4" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Enigmas" value="5" /><span></span>
+            </td>
+            <td><input type="checkbox" class="sheet-bigcheck" name="attr_Enigmas-box" value="1"/><span></span></td>
+        </tr>
+        <tr>
+
+            <th><button type="roll" class="sheet-skill" value="/e rolls Esoterica! [[ { (@{Esoterica} + ?{Modifier?|0})d10}>8 ]]">Esoterica</button></th>
+            <td colspan="2">
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Esoterica" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Esoterica" value="1" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Esoterica" value="2" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Esoterica" value="3" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Esoterica" value="4" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Esoterica" value="5" /><span></span>
+            </td>
+            <td><input type="checkbox" class="sheet-bigcheck" name="attr_Esoterica-box" value="1"/><span></span></td>
+
+            <th><button type="roll" class="sheet-skill" value="/e rolls Larceny! [[ { (@{Larceny} + ?{Modifier?|0})d10}>8 ]]">Larceny</button></th>
+            <td colspan="2">
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Larceny-box" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Larceny" value="1" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Larceny" value="2" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Larceny" value="3" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Larceny" value="4" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Larceny" value="5" /><span></span>
+            </td>
+            <td><input type="checkbox" class="sheet-bigcheck" name="attr_Larceny-box" value="1"/><span></span></td>
+
+            <th><button type="roll" class="sheet-skill" value="/e rolls Leadership! [[ { (@{Leadership} + ?{Modifier?|0})d10}>8 ]]">Leadership</button></th>
+            <td colspan="2">
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Leadership" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Leadership" value="1" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Leadership" value="2" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Leadership" value="3" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Leadership" value="4" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Leadership" value="5" /><span></span>
+            </td>
+            <td><input type="checkbox" class="sheet-bigcheck" name="attr_Leadership-box" value="1"/><span></span></td>
+        <tr>
+        </tr>
+
+            <th><button type="roll" class="sheet-skill" value="/e rolls Medicine! [[ { (@{Medicine} + ?{Modifier?|0})d10}>8 ]]">Medicine</button></th>
+            <td colspan="2">
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Medicine" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Medicine" value="1" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Medicine" value="2" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Medicine" value="3" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Medicine" value="4" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Medicine" value="5" /><span></span>
+            </td>
+            <td><input type="checkbox" class="sheet-bigcheck" name="attr_Medicine-box" value="1"/><span></span></td>
+
+            <th><button type="roll" class="sheet-skill" value="/e rolls Persuasion! [[ { (@{Persuasion} + ?{Modifier?|0})d10}>8 ]]">Persuasion</button></th>
+            <td colspan="2">
+                <input type="radio" class="sheet-normal" name="attr_Persuasion" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Persuasion" value="1" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Persuasion" value="2" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Persuasion" value="3" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Persuasion" value="4" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Persuasion" value="5" /><span></span>
+            </td>
+            <td><input type="checkbox" class="sheet-bigcheck" name="attr_Persuasion-box" value="1"/><span></span></td>
+
+            <th><button type="roll" class="sheet-skill" value="/e rolls Pilot! [[ { (@{Pilot} + ?{Modifier?|0})d10}>8 ]]">Pilot</button></th>
+            <td colspan="2">
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Pilot" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Pilot" value="1" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Pilot" value="2" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Pilot" value="3" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Pilot" value="4" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Pilot" value="5" /><span></span>
+            </td>
+            <td><input type="checkbox" class="sheet-bigcheck" name="attr_Pilot-box" value="1"/><span></span></td>
+            </tr>
+
+            <tr>
+                <th><button type="roll" class="sheet-skill" value="/e rolls Ranged Combat! [[ { (@{Ranged Combat} + ?{Modifier?|0)d10}>8 ]]">Ranged Combat</button></th>
+                <td colspan="2"></td>
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Ranged_Combat" value="0" checked="checked"/><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Ranged_Combat" value="1" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Ranged_Combat" value="2" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Ranged_Combat" value="3" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Ranged_Combat" value="4" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Ranged_Combat" value="5" /><span></span>
+                </td>
+                <td><input type="checkbox" class="sheet-bigcheck" name="attr_Ranged_Combat-box" value="1"/><span></span></td>
+
+            <th><button type="roll" class="sheet-skill" value="/e rolls Science! [[ { (@{Science} + ?{Modifier?|0})d10}>8 ]]">Science</button></th>
+            <td colspan="2">
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Science" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Science" value="1" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Science" value="2" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Science" value="3" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Science" value="4" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Science" value="5" /><span></span>
+            </td>
+            <td><input type="checkbox" class="sheet-bigcheck" name="attr_Science-box" value="1"/><span></span></td>
+
+            <th><button type="roll" class="sheet-skill" value="/e rolls Survival! [[ { (@{Survival} + ?{Modifier?|0})d10}>8 ]]">Survival</button></th>
+            <td colspan="2">
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Survival" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Survival" value="1" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Survival" value="2" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Survival" value="3" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Survival" value="4" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Survival" value="5" /><span></span>
+            </td>
+            <td><input type="checkbox" class="sheet-bigcheck" name="attr_Survival-box" value="1"/><span></span></td>
+            </tr>
+            <tr>
+
+            <th><button type="roll" class="sheet-skill" value="/e rolls Technology! [[ { (@{Technology} + ?{Modifier?|0})d10}>8 ]]">Technology</button></th>
+            <td colspan="2">
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Technology" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Technology" value="1" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Technology" value="2" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Technology" value="3" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Technology" value="4" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Technology" value="5" /><span></span>
+                <input type="radio" class="sheet-normal" name="attr_Technology" value="6" /><span></span>
+            </td>
+            <td><input type="checkbox" class="sheet-bigcheck" name="attr_Technology-box" value="1"/><span></span></td>
+            </tr>
+            <tr>
+                    <td><br></td>
+            </tr>
+    </table>
+            <div class="sheet-center" style="width:100%"><h2>Attributes</h2></div>
+<table style="width:100%">
+    <tr>
+        <th><button type="roll" class="sheet-attribute" value="/e rolls Intellect! [[ { (@{Intellect} + ?{Modifier?|0})d10}>8 ]]">Intellect</button></th>
+                    <td colspan="2">
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Intellect" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Intellect" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Intellect" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Intellect" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Intellect" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Intellect" value="5" /><span></span>
+                    </td>
+        <th><button type="roll" class="sheet-attribute" value="/e rolls Might! [[ { (@{Might} + ?{Modifier?|0})d10}>8 ]]
+        ">Might</button></th>
+                    <td colspan="2">
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Might" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Might" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Might" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Might" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Might" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Might" value="5" /><span></span>
+                    </td>
+        <th><button type="roll" class="sheet-attribute" value="/e rolls Presence! [[ { (@{Presence} + ?{Modifier?|0})d10}>8 ]]
+        ">Presence</button></th>
+        </tr>
+        <tr>
+        <th><button type="roll" class="sheet-attribute" value="/e rolls Cunning! [[ { (@{Cunning} + ?{Modifier?|0})d10}>8 ]]">Cunning</button></th>
+                    <td colspan="2">
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Cunning" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Cunning" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Cunning" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Cunning" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Cunning" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Cunning" value="5" /><span></span>
+                    </td>
+        <th><button type="roll" class="sheet-attribute" value="/e rolls Dexterity! [[ { (@{Dexterity} + ?{Modifier?|0})d10}>8 ]]
+        ">Dexterity</button></th>
+                    <td colspan="2">
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Dexterity" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Dexterity" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Dexterity" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Dexterity" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Dexterity" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Dexterity" value="5" /><span></span>
+                    </td>
+        <th><button type="roll" class="sheet-attribute" value="/e rolls Manipulation! [[ { (@{Manipulation} + ?{Modifier?|0})d10}>8 ]]
+        ">Manipulation</button></th>
+                    <td colspan="2">
+                     <input type="radio" class="sheet-normal sheet-zero" name="attr_Manipulation" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Manipulation" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Manipulation" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Manipulation" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Manipulation" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Manipulation" value="5" /><span></span>
+                        </td>
+        </tr>
+        <tr>
+        <th><button type="roll" class="sheet-attribute" value="/e rolls Resolve! [[ { (@{Resolve} + ?{Modifier?|0})d10}>8 ]]">Resolve</button></th>
+                    <td colspan="2">
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Resolve" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Resolve" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Resolve" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Resolve" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Resolve" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Resolve" value="5" /><span></span>
+                    </td>
+        <th><button type="roll" class="sheet-attribute" value="/e rolls Stamina! [[ { (@{Stamina} + ?{Modifier?|0})d10}>8 ]]">Stamina</button></th>
+                    <td colspan="2">
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Stamina" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Stamina" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Stamina" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Stamina" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Stamina" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Stamina" value="5" /><span></span>
+                    </td>
+        <th><button type="roll" class="sheet-attribute" value="/e rolls Composure! [[ { (@{Composure} + ?{Modifier?|0})d10}>8 ]]">Composure</button></th>
+                    <td colspan="2">
+                        <input type="radio" class="sheet-normal sheet-zero" name="attr_Composure" value="0" checked="checked" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Composure" value="1" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Composure" value="2" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Composure" value="3" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Composure" value="4" /><span></span>
+                        <input type="radio" class="sheet-normal" name="attr_Composure" value="5" /><span></span>
+                    </td>
+                    </tr>
+            </table>
+            <hr>
+            <h2 class="sheet-center">Uncommon Dice Pools</h2>
+            <table class="sheet-grid">
+                <tr>
+                    <th><h5>Roll</h5></th>
+                    <th><h5>Name of Pool</h5></th>
+                    <th><h5>Attribute</h5></th>
+                    <th><h5>Skill</h5></th>
+                    <th><h5>Modifier</h5></th>
+                </tr>
+                <tr>
+                    <td><button type='roll' class="sheet-weapon" value='/em @{character_name} rolls @{dice_pool_1-name} [[{(@{dice_pool_1-attribute} + @{dice_pool_1-skill} + @{dice_pool_1-modifier})d10!}>7]] success(es)'/></td> 
+                    <td><input type="text" class="sheet-textbox" name="attr_dice_pool_1-name" placeholder="Name"/></td>
+                    <th><select class="sheet-textbox" name="attr_dice_pool_1-attribute" style="width:100px">
+                        <option value="0"></option>
+                        <option value="@{Intellect}">Intellect</option>
+                        <option value="@{Might}">Might</option>
+                        <option value="@{Presence}">Presence</option>
+                        <option value="@{Cunning}">Cunning</option>
+                        <option value="@{Dexterity}">Dexterity</option>
+                        <option value="@{Manipulation}">Manipulation</option>
+                        <option value="@{Resolve}">Resolve</option>
+                        <option value="@{Stamina}">Stamina</option>
+                        <option value="@{Composure}">Composure</option></select>
+                    </th>
+                    <th><select class="sheet-textbox" name="attr_dice_pool_1-skill" style="width:120px">
+                        <option value="0"></option>
+                        <option value="@{Artistry}">Artistry</option>
+                        <option value="@{Athletics}">Athletics</option>
+                        <option value="@{Close Combat}">Close Combat</option>
+                        <option value="@{Culture}">Culture</option>
+                        <option value="@{Empathy}">Empathy</option>
+                        <option value="@{Esoterica}">Esoterica</option>
+                        <option value="@{Larceny}">Larceny</option>
+                        <option value="@{Leadership}">Leadership</option>
+                        <option value="@{Medicine}">Medicine</option>
+                        <option value="@{Melee}">Melee</option>
+                        <option value="@{Persuasion}">Persuasion</option>
+                        <option value="@{Pilot}">Pilot</option>
+                        <option value="@{Ranged Combat}">Ranged Combat</option>
+                        <option value="@{Science}">Science</option>
+                        <option value="@{Survival}">Survival</option>
+                        <option value="@{Technology}">Technology</option>
+                        <option value="@{Other1}">Other1</option>
+                        <option value="@{Other2}">Other2</option>
+                        <option value="@{Other3}">Other3</option>
+                        <option value="@{Other4}">Other4</option>
+                        <option value="@{Other5}">Other5</option>
+                        <option value="@{Other6}">Other6</option>
+                        <option value="@{Other7}">Other7</option>
+                        <option value="@{Other8}">Other8</option>
+                        <option value="@{Other9}">Other9</option></select>
+                    </th>
+                    <th><input type="number" class="sheet-textbox" name="attr_dice_pool_1-modifier" value="0"/></th>
+                </tr>
+                <tr>
+                    <td><button type='roll' class="sheet-weapon" value='/em @{character_name} rolls @{dice_pool-2-name} [[{(@{dice_pool_2-attribute} + @{dice_pool_2-skill} + @{dice_pool_2-modifier})d10!}>7]] success(es)'/></td> 
+                    <td><input type="text" class="sheet-textbox" name="attr_dice_pool-2-name" placeholder="Name"/></td>
+                    <th><select class="sheet-textbox" name="attr_dice_pool_2-attribute" style="width:100px">
+                        <option value="0"></option>
+                        <option value="@{Intellect}">Intellect</option>
+                        <option value="@{Might}">Might</option>
+                        <option value="@{Presence}">Presence</option>
+                        <option value="@{Cunning}">Cunning</option>
+                        <option value="@{Dexterity}">Dexterity</option>
+                        <option value="@{Manipulation}">Manipulation</option>
+                        <option value="@{Resolve}">Resolve</option>
+                        <option value="@{Stamina}">Stamina</option>
+                        <option value="@{Composure}">Composure</option></select>
+                    </th>
+                    <th><select class="sheet-textbox" name="attr_dice_pool_2-skill" style="width:120px">
+                        <option value="0"></option>
+                        <option value="@{Artistry}">Artistry</option>
+                        <option value="@{Athletics}">Athletics</option>
+                        <option value="@{Close Combat}">Close Combat</option>
+                        <option value="@{Culture}">Culture</option>
+                        <option value="@{Empathy}">Empathy</option>
+                        <option value="@{Esoterica}">Esoterica</option>
+                        <option value="@{Larceny}">Larceny</option>
+                        <option value="@{Leadership}">Leadership</option>
+                        <option value="@{Medicine}">Medicine</option>
+                        <option value="@{Melee}">Melee</option>
+                        <option value="@{Persuasion}">Persuasion</option>
+                        <option value="@{Pilot}">Pilot</option>
+                        <option value="@{Ranged Combat}">Ranged Combat</option>
+                        <option value="@{Science}">Science</option>
+                        <option value="@{Survival}">Survival</option>
+                        <option value="@{Technology}">Technology</option>
+                        <option value="@{Other1}">Other1</option>
+                        <option value="@{Other2}">Other2</option>
+                        <option value="@{Other3}">Other3</option>
+                        <option value="@{Other4}">Other4</option>
+                        <option value="@{Other5}">Other5</option>
+                        <option value="@{Other6}">Other6</option>
+                        <option value="@{Other7}">Other7</option>
+                        <option value="@{Other8}">Other8</option>
+                        <option value="@{Other9}">Other9</option></select>
+                    </th>
+                    <th><input type="number" class="sheet-textbox" name="attr_dice_pool_2-modifier" value="0"/></th>
+                </tr>
+                <tr>
+                    <td><button type='roll' class="sheet-weapon" value='/em @{character_name} rolls @{dice_pool_3-name} [[{(@{dice_pool_3-attribute} + @{dice_pool_3-skill} + @{dice_pool_3-modifier})d10!}>7]] success(es)'/></td> 
+                    <td><input type="text" class="sheet-textbox" name="attr_dice_pool_3-name" placeholder="Name"/></td>
+                    <th><select class="sheet-textbox" name="attr_dice_pool_3-attribute" style="width:100px">
+                        <option value="0"></option>
+                        <option value="@{Intellect}">Intellect</option>
+                        <option value="@{Might}">Might</option>
+                        <option value="@{Presence}">Presence</option>
+                        <option value="@{Cunning}">Cunning</option>
+                        <option value="@{Dexterity}">Dexterity</option>
+                        <option value="@{Manipulation}">Manipulation</option>
+                        <option value="@{Resolve}">Resolve</option>
+                        <option value="@{Stamina}">Stamina</option>
+                        <option value="@{Composure}">Composure</option></select>
+                    </th>
+                    <th><select class="sheet-textbox" name="attr_dice_pool_3-skill" style="width:120px">
+                        <option value="0"></option>
+                        <option value="@{Artistry}">Artistry</option>
+                        <option value="@{Athletics}">Athletics</option>
+                        <option value="@{Close Combat}">Close Combat</option>
+                        <option value="@{Culture}">Culture</option>
+                        <option value="@{Empathy}">Empathy</option>
+                        <option value="@{Esoterica}">Esoterica</option>
+                        <option value="@{Larceny}">Larceny</option>
+                        <option value="@{Leadership}">Leadership</option>
+                        <option value="@{Medicine}">Medicine</option>
+                        <option value="@{Melee}">Melee</option>
+                        <option value="@{Persuasion}">Persuasion</option>
+                        <option value="@{Pilot}">Pilot</option>
+                        <option value="@{Ranged Combat}">Ranged Combat</option>
+                        <option value="@{Science}">Science</option>
+                        <option value="@{Survival}">Survival</option>
+                        <option value="@{Technology}">Technology</option>
+                        <option value="@{Other1}">Other1</option>
+                        <option value="@{Other2}">Other2</option>
+                        <option value="@{Other3}">Other3</option>
+                        <option value="@{Other4}">Other4</option>
+                        <option value="@{Other5}">Other5</option>
+                        <option value="@{Other6}">Other6</option>
+                        <option value="@{Other7}">Other7</option>
+                        <option value="@{Other8}">Other8</option>
+                        <option value="@{Other9}">Other9</option></select>
+                    </th>
+                    <th><input type="number" class="sheet-textbox" name="attr_dice_pool_3-modifier" value="0"/></th>
+                </tr>
+                <tr>
+                    <td><button type='roll' class="sheet-weapon" value='/em @{character_name} rolls @{dice_pool_4-name} [[{(@{dice_pool_4-attribute} + @{dice_pool_4-skill} + @{dice_pool_4-modifier})d10!}>7]] success(es)'/></td> 
+                    <td><input type="text" class="sheet-textbox" name="attr_dice_pool_4-name" placeholder="Name"/></td>
+                    <th><select class="sheet-textbox" name="attr_dice_pool_4-attribute" style="width:100px">
+                        <option value="0"></option>
+                        <option value="@{Intellect}">Intellect</option>
+                        <option value="@{Might}">Might</option>
+                        <option value="@{Presence}">Presence</option>
+                        <option value="@{Cunning}">Cunning</option>
+                        <option value="@{Dexterity}">Dexterity</option>
+                        <option value="@{Manipulation}">Manipulation</option>
+                        <option value="@{Resolve}">Resolve</option>
+                        <option value="@{Stamina}">Stamina</option>
+                        <option value="@{Composure}">Composure</option></select>
+                    </th>
+                    <th><select class="sheet-textbox" name="attr_dice_pool_4-skill" style="width:120px">
+                        <option value="0"></option>
+                        <option value="@{Artistry}">Artistry</option>
+                        <option value="@{Athletics}">Athletics</option>
+                        <option value="@{Close Combat}">Close Combat</option>
+                        <option value="@{Culture}">Culture</option>
+                        <option value="@{Empathy}">Empathy</option>
+                        <option value="@{Esoterica}">Esoterica</option>
+                        <option value="@{Larceny}">Larceny</option>
+                        <option value="@{Leadership}">Leadership</option>
+                        <option value="@{Medicine}">Medicine</option>
+                        <option value="@{Melee}">Melee</option>
+                        <option value="@{Persuasion}">Persuasion</option>
+                        <option value="@{Pilot}">Pilot</option>
+                        <option value="@{Ranged Combat}">Ranged Combat</option>
+                        <option value="@{Science}">Science</option>
+                        <option value="@{Survival}">Survival</option>
+                        <option value="@{Technology}">Technology</option>
+                        <option value="@{Other1}">Other1</option>
+                        <option value="@{Other2}">Other2</option>
+                        <option value="@{Other3}">Other3</option>
+                        <option value="@{Other4}">Other4</option>
+                        <option value="@{Other5}">Other5</option>
+                        <option value="@{Other6}">Other6</option>
+                        <option value="@{Other7}">Other7</option>
+                        <option value="@{Other8}">Other8</option>
+                        <option value="@{Other9}">Other9</option></select>
+                    </th>
+                    <th><input type="number" class="sheet-textbox" name="attr_dice_pool_4-modifier" value="0"/></th>
+                </tr>
+                <tr>
+                    <td><button type='roll' class="sheet-weapon" value='/em @{character_name} rolls @{dice_pool-5-name} [[{(@{dice_pool_5-attribute} + @{dice_pool_5-skill} + @{dice_pool_5-modifier})d10!}>7]] success(es)'/></td>
+                    <td><input type="text" class="sheet-textbox" name="attr_dice_pool-5-name" placeholder="Name"/></td>
+                    <th><select class="sheet-textbox" name="attr_dice_pool_5-attribute" style="width:100px">
+                        <option value="0"></option>
+                        <option value="@{Intellect}">Intellect</option>
+                        <option value="@{Might}">Might</option>
+                        <option value="@{Presence}">Presence</option>
+                        <option value="@{Cunning}">Cunning</option>
+                        <option value="@{Dexterity}">Dexterity</option>
+                        <option value="@{Manipulation}">Manipulation</option>
+                        <option value="@{Resolve}">Resolve</option>
+                        <option value="@{Stamina}">Stamina</option>
+                        <option value="@{Composure}">Composure</option></select>
+                    </th>
+                    <th><select class="sheet-textbox" name="attr_dice_pool_5-skill" style="width:120px">
+                        <option value="0"></option>
+                        <option value="@{Artistry}">Artistry</option>
+                        <option value="@{Athletics}">Athletics</option>
+                        <option value="@{Close Combat}">Close Combat</option>
+                        <option value="@{Culture}">Culture</option>
+                        <option value="@{Empathy}">Empathy</option>
+                        <option value="@{Esoterica}">Esoterica</option>
+                        <option value="@{Larceny}">Larceny</option>
+                        <option value="@{Leadership}">Leadership</option>
+                        <option value="@{Medicine}">Medicine</option>
+                        <option value="@{Melee}">Melee</option>
+                        <option value="@{Persuasion}">Persuasion</option>
+                        <option value="@{Pilot}">Pilot</option>
+                        <option value="@{Ranged Combat}">Ranged Combat</option>
+                        <option value="@{Science}">Science</option>
+                        <option value="@{Survival}">Survival</option>
+                        <option value="@{Technology}">Technology</option>
+                        <option value="@{Other1}">Other1</option>
+                        <option value="@{Other2}">Other2</option>
+                        <option value="@{Other3}">Other3</option>
+                        <option value="@{Other4}">Other4</option>
+                        <option value="@{Other5}">Other5</option>
+                        <option value="@{Other6}">Other6</option>
+                        <option value="@{Other7}">Other7</option>
+                        <option value="@{Other8}">Other8</option>
+                        <option value="@{Other9}">Other9</option></select>
+                    </th>
+                    <th><input type="number" class="sheet-textbox" name="attr_dice_pool_5-modifier" value="0"/></th>
+                </tr>
+                <tr>
+                    <td><button type='roll' class="sheet-weapon" value='/em @{character_name} rolls @{dice_pool-6-name} [[{(@{dice_pool_6-attribute} + @{dice_pool_6-skill} + @{dice_pool_6-modifier})d10!}>7]] success(es)'/></td>
+                    <td><input type="text" class="sheet-textbox" name="attr_dice_pool-6-name" placeholder="Name"/></td>
+                    <th><select class="sheet-textbox" name="attr_dice_pool_6-attribute" style="width:100px">
+                        <option value=""></option>
+                        <option value="@{Intellect}">Intellect</option>
+                        <option value="@{Might}">Might</option>
+                        <option value="@{Presence}">Presence</option>
+                        <option value="@{Cunning}">Cunning</option>
+                        <option value="@{Dexterity}">Dexterity</option>
+                        <option value="@{Manipulation}">Manipulation</option>
+                        <option value="@{Resolve}">Resolve</option>
+                        <option value="@{Stamina}">Stamina</option>
+                        <option value="@{Composure}">Composure</option></select>
+                    </th>
+                    <th><select class="sheet-textbox" name="attr_dice_pool_6-skill" style="width:120px">
+                        <option value="0"></option>
+                        <option value="@{Artistry}">Artistry</option>
+                        <option value="@{Athletics}">Athletics</option>
+                        <option value="@{Close Combat}">Close Combat</option>
+                        <option value="@{Culture}">Culture</option>
+                        <option value="@{Empathy}">Empathy</option>
+                        <option value="@{Esoterica}">Esoterica</option>
+                        <option value="@{Larceny}">Larceny</option>
+                        <option value="@{Leadership}">Leadership</option>
+                        <option value="@{Medicine}">Medicine</option>
+                        <option value="@{Melee}">Melee</option>
+                        <option value="@{Persuasion}">Persuasion</option>
+                        <option value="@{Pilot}">Pilot</option>
+                        <option value="@{Ranged Combat}">Ranged Combat</option>
+                        <option value="@{Science}">Science</option>
+                        <option value="@{Survival}">Survival</option>
+                        <option value="@{Technology}">Technology</option>
+                        <option value="@{Other1}">Other1</option>
+                        <option value="@{Other2}">Other2</option>
+                        <option value="@{Other3}">Other3</option>
+                        <option value="@{Other4}">Other4</option>
+                        <option value="@{Other5}">Other5</option>
+                        <option value="@{Other6}">Other6</option>
+                        <option value="@{Other7}">Other7</option>
+                        <option value="@{Other8}">Other8</option>
+                        <option value="@{Other9}">Other9</option></select>
+                    </th>
+                    <th><input type="number" class="sheet-textbox" name="attr_dice_pool_6-modifier" value="0"/></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
