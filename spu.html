@@ -14,12 +14,9 @@
 <!-- Tab1 -->
 <div class="sheet-section-1">
     <div class="sheet-tabbed-panel">
-    <div class='sheet-3colrow'>
-        <div class="sheet-col">
-            <br><br><br><br><br><br><br><br>
-            </div>
+        <div class="sheet-row-panel">
+        <div class='sheet-3colrow'>
             <div class="sheet-col">
-                <br><br><br><br><br>
             <table>
                 <tr>
                     <td>Name:</td>
@@ -42,6 +39,10 @@
         </div>
         <div class="sheet-col">
             <table>
+                <tr>
+                    <td>Concept:</td>
+                    <td><input type="text" class="sheet-textbox" name="attr_concept"/></td>
+                </tr>
                 <tr>
                     <td>Player:</td>
                     <td><input type="text" class="sheet-textbox" name="attr_player"/></td>
@@ -346,6 +347,49 @@
                     </td>
                     </tr>
             </table>
+            <!-- edges -->
+<!--            <hr>-->
+<!--            <h2 class="sheet-center">Edges</h2>-->
+<!--                <input type="text" class="sheet-textbox" style="width:100%" name="attr_Edges-1" />-->
+<!--                <input type="text" class="sheet-textbox" style="width:100%" name="attr_Edges-2" />-->
+<!--                <input type="text" class="sheet-textbox" style="width:100%" name="attr_Edges-3" />-->
+<!--                <td>-->
+
+<!--                </td>-->
+
+            <tr>
+                <td><br></td>
+            </tr>
+            <div class="sheet-center" style="width:100%"><h2>Edges</h2></div>
+            <table style="width:100%">
+                <fieldset class="repeating_edges">
+
+                    <input type="text" name="attr_edge" class="feature-label" placeholder="Edge Name" >
+
+                    <!-- Collapsible section -->
+                    <input type="hidden" class="toggle-more" name="attr_more" value="0" /><button type="action" name="act_toggle"><span class="more" data-i18n="more">More</span><span class="less" data-i18n="less">Less</span></button>
+                    <div class="expandable">
+                        <div class="sheet-row">
+                            <input type="radio" class="sheet-normal" name="attr_rating" value="1" /><span></span>
+                            <input type="radio" class="sheet-normal" name="attr_rating" value="2" />
+                            <span></span>
+                            <input type="radio" class="sheet-normal" name="attr_rating" value="3" />
+                            <span></span>
+                            <input type="radio" class="sheet-normal" name="attr_rating" value="4" />
+                            <span></span>
+                            <input type="radio" class="sheet-normal" name="attr_rating" value="5" />
+                            <span></span>
+                            <input type="text" name="attr_edge-details" placeholder="Edge Detail" style="width:300px">
+                            <button type="roll" class="sheet-edge" value="@{character_name} {name=@{edge}} @{edge-details}" title="Edge Detail" ></button>
+                        </div>
+                    </div>
+                    <!-- Collapsible section -->
+
+                </fieldset>
+
+            </table>
+
+            <!-- Uncommon Dice Pools -->
             <hr>
             <h2 class="sheet-center">Uncommon Dice Pools</h2>
             <table class="sheet-grid">
