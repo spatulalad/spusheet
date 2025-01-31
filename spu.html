@@ -1,10 +1,10 @@
 
 <!-- Set up the Tabs -->
 <input type="radio" class="sheet-tab sheet-tab1" name="attr_core-tab" value="1" title="Attributes & Abilities" checked="checked"/> 
-    <span class="sheet-tab sheet-tab1" style='line-height: 20px;'>Attributes &<br> Abilities</span>
-<input type="radio" class="sheet-tab sheet-tab2" name="attr_core-tab" value="2" title="Advantages" /> 
+    <span class="sheet-tab sheet-tab1" style='line-height: 20px;'>Skills & Attributes</span>
+<input type="radio" class="sheet-tab sheet-tab2" name="attr_core-tab" value="2" title="Gifts" />
     <span class="sheet-tab sheet-tab2" style='line-height: 40px;'>Advantages</span>
-<input type="radio" class="sheet-tab sheet-tab3" name="attr_core-tab" value="3" title="Merits & Flaws" /> 
+<input type="radio" class="sheet-tab sheet-tab3" name="attr_core-tab" value="3" title="Edges" />
     <span class="sheet-tab sheet-tab3" style='line-height: 20px;'>Merits &<br>Flaws</span>
 <input type="radio" class="sheet-tab sheet-tab4" name="attr_core-tab" value="4" title="Combat & Gear" /> 
     <span class="sheet-tab sheet-tab4" style='line-height: 20px;'>Combat & <br>Gear</span>
@@ -16,10 +16,10 @@
     <div class="sheet-tabbed-panel">
     <div class='sheet-3colrow'>
         <div class="sheet-col">
-            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br>
             </div>
             <div class="sheet-col">
-                <br><br><br><br><br><br>
+                <br><br><br><br><br>
             </div>
             <table>
                 <tr>
@@ -53,9 +53,14 @@
                     name="attr_series" /></td>
                 </tr>
                 <tr>
-                    <td>Inspiration:</td>
+                    <td>Moment of Inspiration:</td>
                     <td><input type="text" class="sheet-textbox"
                     name="attr_inspiration" /></td>
+                </tr>
+                <tr>
+                    <td>A THING</td>
+                    <td><input type="text" class="sheet-textbox"
+                    name="attr_thing" /></td>
                 </tr>
             </table>
         </div>
@@ -86,7 +91,7 @@
             </td>
             <td><input type="checkbox" class="sheet-bigcheck" name="attr_Athletics-box" value="1"/><span></span></td>
 
-            <th><button type="roll" class="sheet-skill" value="/e rolls Close Combat! [[ { (@{Close Combat} + ?{Modifier?|0})d10}>8 ]]">Close Combat</button></th>
+            <th><button type="roll" class="sheet-skill" value="/e rolls Close Combat! [[ { (@{Close_Combat} + ?{Modifier?|0})d10}>8 ]]">Close Combat</button></th>
             <td colspan="2">
                 <input type="radio" class="sheet-normal sheet-zero" name="attr_Close_Combat" value="0" checked="checked" /><span></span>
                 <input type="radio" class="sheet-normal" name="attr_Close_Combat" value="1" /><span></span>
@@ -97,8 +102,8 @@
             </td>
             <td><input type="checkbox" class="sheet-bigcheck" name="attr_Close_Combat-box" value="1"/><span></span></td>
             </tr>
-            <tr>
 
+            <tr>
             <th><button type="roll" class="sheet-skill" value="/e rolls Culture! [[ { (@{Culture} + ?{Modifier?|0})d10}>8 ]]">Culture</button></th>
             <td colspan="2">
                 <input type="radio" class="sheet-normal sheet-zero" name="attr_Culture" value="0" checked="checked" /><span></span>
@@ -132,8 +137,8 @@
             </td>
             <td><input type="checkbox" class="sheet-bigcheck" name="attr_Enigmas-box" value="1"/><span></span></td>
         </tr>
-        <tr>
 
+        <tr>
             <th><button type="roll" class="sheet-skill" value="/e rolls Esoterica! [[ { (@{Esoterica} + ?{Modifier?|0})d10}>8 ]]">Esoterica</button></th>
             <td colspan="2">
                 <input type="radio" class="sheet-normal sheet-zero" name="attr_Esoterica" value="0" checked="checked" /><span></span>
@@ -147,7 +152,7 @@
 
             <th><button type="roll" class="sheet-skill" value="/e rolls Larceny! [[ { (@{Larceny} + ?{Modifier?|0})d10}>8 ]]">Larceny</button></th>
             <td colspan="2">
-                <input type="radio" class="sheet-normal sheet-zero" name="attr_Larceny-box" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Larceny" value="0" checked="checked" /><span></span>
                 <input type="radio" class="sheet-normal" name="attr_Larceny" value="1" /><span></span>
                 <input type="radio" class="sheet-normal" name="attr_Larceny" value="2" /><span></span>
                 <input type="radio" class="sheet-normal" name="attr_Larceny" value="3" /><span></span>
@@ -166,9 +171,9 @@
                 <input type="radio" class="sheet-normal" name="attr_Leadership" value="5" /><span></span>
             </td>
             <td><input type="checkbox" class="sheet-bigcheck" name="attr_Leadership-box" value="1"/><span></span></td>
-        <tr>
         </tr>
 
+        <tr>
             <th><button type="roll" class="sheet-skill" value="/e rolls Medicine! [[ { (@{Medicine} + ?{Modifier?|0})d10}>8 ]]">Medicine</button></th>
             <td colspan="2">
                 <input type="radio" class="sheet-normal sheet-zero" name="attr_Medicine" value="0" checked="checked" /><span></span>
@@ -182,7 +187,7 @@
 
             <th><button type="roll" class="sheet-skill" value="/e rolls Persuasion! [[ { (@{Persuasion} + ?{Modifier?|0})d10}>8 ]]">Persuasion</button></th>
             <td colspan="2">
-                <input type="radio" class="sheet-normal" name="attr_Persuasion" value="0" checked="checked" /><span></span>
+                <input type="radio" class="sheet-normal sheet-zero" name="attr_Persuasion" value="0" checked="checked" /><span></span>
                 <input type="radio" class="sheet-normal" name="attr_Persuasion" value="1" /><span></span>
                 <input type="radio" class="sheet-normal" name="attr_Persuasion" value="2" /><span></span>
                 <input type="radio" class="sheet-normal" name="attr_Persuasion" value="3" /><span></span>
@@ -204,14 +209,14 @@
             </tr>
 
             <tr>
-                <th><button type="roll" class="sheet-skill" value="/e rolls Ranged Combat! [[ { (@{Ranged Combat} + ?{Modifier?|0)d10}>8 ]]">Ranged Combat</button></th>
-                <td colspan="2"></td>
-                <input type="radio" class="sheet-normal sheet-zero" name="attr_Ranged_Combat" value="0" checked="checked"/><span></span>
-                <input type="radio" class="sheet-normal" name="attr_Ranged_Combat" value="1" /><span></span>
-                <input type="radio" class="sheet-normal" name="attr_Ranged_Combat" value="2" /><span></span>
-                <input type="radio" class="sheet-normal" name="attr_Ranged_Combat" value="3" /><span></span>
-                <input type="radio" class="sheet-normal" name="attr_Ranged_Combat" value="4" /><span></span>
-                <input type="radio" class="sheet-normal" name="attr_Ranged_Combat" value="5" /><span></span>
+                <th><button type="roll" class="sheet-skill" value="/e rolls Ranged Combat! [[ { (@{Ranged_Combat} + ?{Modifier?|0})d10}>8 ]]">Ranged Combat</button></th>
+                <td colspan="2">
+                    <input type="radio" class="sheet-normal sheet-zero" name="attr_Ranged_Combat" value="0" checked="checked" /><span></span>
+                    <input type="radio" class="sheet-normal" name="attr_Ranged_Combat" value="1" /><span></span>
+                    <input type="radio" class="sheet-normal" name="attr_Ranged_Combat" value="2" /><span></span>
+                    <input type="radio" class="sheet-normal" name="attr_Ranged_Combat" value="3" /><span></span>
+                    <input type="radio" class="sheet-normal" name="attr_Ranged_Combat" value="4" /><span></span>
+                    <input type="radio" class="sheet-normal" name="attr_Ranged_Combat" value="5" /><span></span>
                 </td>
                 <td><input type="checkbox" class="sheet-bigcheck" name="attr_Ranged_Combat-box" value="1"/><span></span></td>
 
@@ -237,7 +242,6 @@
             </td>
             <td><input type="checkbox" class="sheet-bigcheck" name="attr_Survival-box" value="1"/><span></span></td>
             </tr>
-            <tr>
 
             <th><button type="roll" class="sheet-skill" value="/e rolls Technology! [[ { (@{Technology} + ?{Modifier?|0})d10}>8 ]]">Technology</button></th>
             <td colspan="2">
@@ -247,7 +251,6 @@
                 <input type="radio" class="sheet-normal" name="attr_Technology" value="3" /><span></span>
                 <input type="radio" class="sheet-normal" name="attr_Technology" value="4" /><span></span>
                 <input type="radio" class="sheet-normal" name="attr_Technology" value="5" /><span></span>
-                <input type="radio" class="sheet-normal" name="attr_Technology" value="6" /><span></span>
             </td>
             <td><input type="checkbox" class="sheet-bigcheck" name="attr_Technology-box" value="1"/><span></span></td>
             </tr>
@@ -279,6 +282,14 @@
                     </td>
         <th><button type="roll" class="sheet-attribute" value="/e rolls Presence! [[ { (@{Presence} + ?{Modifier?|0})d10}>8 ]]
         ">Presence</button></th>
+                <td colspan="2">
+                    <input type="radio" class="sheet-normal sheet-zero" name="attr_Presence" value="0" checked="checked" /><span></span>
+                    <input type="radio" class="sheet-normal" name="attr_Presence" value="1" /><span></span>
+                    <input type="radio" class="sheet-normal" name="attr_Presence" value="2" /><span></span>
+                    <input type="radio" class="sheet-normal" name="attr_Presence" value="3" /><span></span>
+                    <input type="radio" class="sheet-normal" name="attr_Presence" value="4" /><span></span>
+                    <input type="radio" class="sheet-normal" name="attr_Presence" value="5" /><span></span>
+                    </td>
         </tr>
         <tr>
         <th><button type="roll" class="sheet-attribute" value="/e rolls Cunning! [[ { (@{Cunning} + ?{Modifier?|0})d10}>8 ]]">Cunning</button></th>
@@ -370,7 +381,7 @@
                         <option value="0"></option>
                         <option value="@{Artistry}">Artistry</option>
                         <option value="@{Athletics}">Athletics</option>
-                        <option value="@{Close Combat}">Close Combat</option>
+                        <option value="@{Close_Combat}">Close Combat</option>
                         <option value="@{Culture}">Culture</option>
                         <option value="@{Empathy}">Empathy</option>
                         <option value="@{Esoterica}">Esoterica</option>
@@ -380,7 +391,7 @@
                         <option value="@{Melee}">Melee</option>
                         <option value="@{Persuasion}">Persuasion</option>
                         <option value="@{Pilot}">Pilot</option>
-                        <option value="@{Ranged Combat}">Ranged Combat</option>
+                        <option value="@{Ranged_Combat}">Ranged Combat</option>
                         <option value="@{Science}">Science</option>
                         <option value="@{Survival}">Survival</option>
                         <option value="@{Technology}">Technology</option>
@@ -415,7 +426,7 @@
                         <option value="0"></option>
                         <option value="@{Artistry}">Artistry</option>
                         <option value="@{Athletics}">Athletics</option>
-                        <option value="@{Close Combat}">Close Combat</option>
+                        <option value="@{Close_Combat}">Close Combat</option>
                         <option value="@{Culture}">Culture</option>
                         <option value="@{Empathy}">Empathy</option>
                         <option value="@{Esoterica}">Esoterica</option>
@@ -425,7 +436,7 @@
                         <option value="@{Melee}">Melee</option>
                         <option value="@{Persuasion}">Persuasion</option>
                         <option value="@{Pilot}">Pilot</option>
-                        <option value="@{Ranged Combat}">Ranged Combat</option>
+                        <option value="@{Ranged_Combat}">Ranged Combat</option>
                         <option value="@{Science}">Science</option>
                         <option value="@{Survival}">Survival</option>
                         <option value="@{Technology}">Technology</option>
@@ -460,7 +471,7 @@
                         <option value="0"></option>
                         <option value="@{Artistry}">Artistry</option>
                         <option value="@{Athletics}">Athletics</option>
-                        <option value="@{Close Combat}">Close Combat</option>
+                        <option value="@{Close_Combat}">Close Combat</option>
                         <option value="@{Culture}">Culture</option>
                         <option value="@{Empathy}">Empathy</option>
                         <option value="@{Esoterica}">Esoterica</option>
@@ -470,7 +481,7 @@
                         <option value="@{Melee}">Melee</option>
                         <option value="@{Persuasion}">Persuasion</option>
                         <option value="@{Pilot}">Pilot</option>
-                        <option value="@{Ranged Combat}">Ranged Combat</option>
+                        <option value="@{Ranged_Combat}">Ranged Combat</option>
                         <option value="@{Science}">Science</option>
                         <option value="@{Survival}">Survival</option>
                         <option value="@{Technology}">Technology</option>
@@ -505,7 +516,7 @@
                         <option value="0"></option>
                         <option value="@{Artistry}">Artistry</option>
                         <option value="@{Athletics}">Athletics</option>
-                        <option value="@{Close Combat}">Close Combat</option>
+                        <option value="@{Close_Combat}">Close Combat</option>
                         <option value="@{Culture}">Culture</option>
                         <option value="@{Empathy}">Empathy</option>
                         <option value="@{Esoterica}">Esoterica</option>
@@ -515,7 +526,7 @@
                         <option value="@{Melee}">Melee</option>
                         <option value="@{Persuasion}">Persuasion</option>
                         <option value="@{Pilot}">Pilot</option>
-                        <option value="@{Ranged Combat}">Ranged Combat</option>
+                        <option value="@{Ranged_Combat}">Ranged Combat</option>
                         <option value="@{Science}">Science</option>
                         <option value="@{Survival}">Survival</option>
                         <option value="@{Technology}">Technology</option>
@@ -550,7 +561,7 @@
                         <option value="0"></option>
                         <option value="@{Artistry}">Artistry</option>
                         <option value="@{Athletics}">Athletics</option>
-                        <option value="@{Close Combat}">Close Combat</option>
+                        <option value="@{Close_Combat}">Close Combat</option>
                         <option value="@{Culture}">Culture</option>
                         <option value="@{Empathy}">Empathy</option>
                         <option value="@{Esoterica}">Esoterica</option>
@@ -560,7 +571,7 @@
                         <option value="@{Melee}">Melee</option>
                         <option value="@{Persuasion}">Persuasion</option>
                         <option value="@{Pilot}">Pilot</option>
-                        <option value="@{Ranged Combat}">Ranged Combat</option>
+                        <option value="@{Ranged_Combat}">Ranged Combat</option>
                         <option value="@{Science}">Science</option>
                         <option value="@{Survival}">Survival</option>
                         <option value="@{Technology}">Technology</option>
@@ -595,7 +606,7 @@
                         <option value="0"></option>
                         <option value="@{Artistry}">Artistry</option>
                         <option value="@{Athletics}">Athletics</option>
-                        <option value="@{Close Combat}">Close Combat</option>
+                        <option value="@{Close_Combat}">Close Combat</option>
                         <option value="@{Culture}">Culture</option>
                         <option value="@{Empathy}">Empathy</option>
                         <option value="@{Esoterica}">Esoterica</option>
@@ -605,7 +616,7 @@
                         <option value="@{Melee}">Melee</option>
                         <option value="@{Persuasion}">Persuasion</option>
                         <option value="@{Pilot}">Pilot</option>
-                        <option value="@{Ranged Combat}">Ranged Combat</option>
+                        <option value="@{Ranged_Combat}">Ranged Combat</option>
                         <option value="@{Science}">Science</option>
                         <option value="@{Survival}">Survival</option>
                         <option value="@{Technology}">Technology</option>

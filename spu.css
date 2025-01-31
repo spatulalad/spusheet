@@ -156,15 +156,15 @@ div.sheet-core-content {
     width:840px;
 }
 
-.charsheet div[class^="sheet-section"] {     
-    display: none;
-    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Adventure!/assets/images/15L8aEI.jpg');
-    background-size:100%;
-    padding-left:26px;
-    padding-right:26px;
-    padding-top:20px;
-    height:1047px;
-}
+/*.charsheet div[class^="sheet-section"] {     */
+/*    display: none;*/
+/*    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Adventure!/assets/images/15L8aEI.jpg');*/
+/*    background-size:100%;*/
+/*    padding-left:26px;*/
+/*    padding-right:26px;*/
+/*    padding-top:20px;*/
+/*    height:1047px;*/
+/*}*/
 
 .charsheet input.sheet-tab1:checked ~ div.sheet-section-1,
 .charsheet input.sheet-tab2:checked ~ div.sheet-section-2,
