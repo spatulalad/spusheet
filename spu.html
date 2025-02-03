@@ -361,7 +361,6 @@
                 <td><br></td>
             </tr>
             <div class="sheet-center" style="width:100%"><h2>Edges</h2></div>
-            <table style="width:100%">
                 <fieldset class="repeating_edges">
 
                     <input type="text" name="attr_edge" class="feature-label" placeholder="Edge Name" >
@@ -380,7 +379,7 @@
                             <input type="radio" class="sheet-normal" name="attr_rating" value="5" />
                             <span></span>
                             <input type="text" name="attr_edge-details" placeholder="Edge Detail" style="width:300px">
-                            <button type="roll" class="sheet-edge" value="@{character_name} {name=@{edge}} @{edge-details}" title="Edge Detail" ></button>
+                            <button type="roll" name="roll_Print" class="details-roll" value="@{whisper} {{character=@{character_name}}} {{name=@{edge}}+} @{edge-details}" title="Edge Detail" ></button>
                         </div>
                     </div>
                     <!-- Collapsible section -->
@@ -668,9 +667,9 @@
                         <option value="@{Other8}">Other8</option>
                         <option value="@{Other9}">Other9</option></select>
                     </th>
-                    <th><input type="number" class="sheet-textbox" name="attr_dice_pool_6-modifier" value="0"/></th>
+                    <th><input type="number" class="sheet-textbox" name="attr_dice_pool_5-modifier" value="0"/></th>
                 </tr>
             </table>
+            </div>
         </div>
-    </div>
 </div>
