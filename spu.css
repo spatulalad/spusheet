@@ -634,3 +634,47 @@ button[type=roll].sheet-weapon:active {
     background:gray;
     color:black;
 }
+
+/* Default Template fixes */
+.sheet-rolltemplate-default td {
+    vertical-align: middle;
+  }
+  .sheet-rolltemplate-default td:first-child{
+    font-weight: normal;
+  }
+  
+  /* Default template: Rounded corners */
+  .sheet-rolltemplate-default table{
+    border-collapse: separate;
+    overflow: hidden;
+  }
+  .sheet-rolltemplate-default caption {
+    text-align: center;
+    font-weight: bold;
+    border-top-left-radius: 6% 50%;
+    border-top-right-radius: 6% 50%;
+  }
+  .sheet-rolltemplate-default table,
+  .sheet-rolltemplate-default tbody,
+  .sheet-rolltemplate-default table tr:last-of-type {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  /* Keith's fixes */
+  /*Enlarges Righthand Column when possible*/
+  .sheet-rolltemplate-default td:first-child {
+    text-align: right;
+    min-width: 0px;
+    padding-right: 5px;
+  }
+  /*The following two blocks control size and position*/
+  .sheet-rolltemplate-default td {
+    padding: 1px;
+    line-height: 1.4em;
+    vertical-align: top;
+  }
+  .sheet-rolltemplate-default {
+    margin-left: -30px;
+    margin-right: 20px;
+  }
