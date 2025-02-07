@@ -107,6 +107,40 @@ select {
 
 }
 
+/* Injuries section */
+.health {
+    margin: 20px 0;
+}
+
+.dots {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.char-health {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.char-health input[type="checkbox"] {
+    margin: 0 5px;
+}
+
+.armor-hide, .bloodied-hide, .wounded-hide, .maimed-hide, .neardeath-hide {
+    display: none;
+}
+
+.armor-toggle[value="1"] ~ .armor-hide,
+.bloodied-toggle[value="1"] ~ .bloodied-hide,
+.wounded-toggle[value="1"] ~ .wounded-hide,
+.maimed-toggle[value="1"] ~ .maimed-hide,
+.neardeath-toggle[value="1"] ~ .neardeath-hide {
+    display: block;
+}
+
 /*-------Tables--------*/
 table.sheet-weapon, th.sheet-weapon, td.sheet-weapon {
     border: 1px solid black;
@@ -706,37 +740,7 @@ button[type=roll].sheet-weapon:active {
   }
 
 
-/* Injuries section */
-.health {
-    margin: 20px 0;
-}
+/*-----textareas-----*/
 
-.dots {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
 
-.char-health {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px 0;
-}
-
-.char-health input[type="checkbox"] {
-    margin: 0 5px;
-}
-
-.armor-hide, .bloodied-hide, .wounded-hide, .maimed-hide, .neardeath-hide {
-    display: none;
-}
-
-.armor-toggle[value="1"] ~ .armor-hide,
-.bloodied-toggle[value="1"] ~ .bloodied-hide,
-.wounded-toggle[value="1"] ~ .wounded-hide,
-.maimed-toggle[value="1"] ~ .maimed-hide,
-.neardeath-toggle[value="1"] ~ .neardeath-hide {
-    display: block;
-}
 }
