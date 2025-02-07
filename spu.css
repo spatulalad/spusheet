@@ -232,6 +232,33 @@ div.sheet-core-content {
     border:2px solid black;
 }
 
+/* Adjust the styles for the sheet-tab class */
+.sheet-tab {
+    display: inline-block;
+    padding: 5px 10px; /* Adjust padding as needed */
+    height: 30px; /* Adjust height as needed */
+    line-height: 30px; /* Match line-height to height */
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid #000; /* Add border if needed */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    background-color: #f0f0f0; /* Optional: Add background color */
+    color: #000; /* Optional: Add text color */
+}
+
+/* Adjust the styles for specific tabs if needed */
+.sheet-tab1 {
+    line-height: 20px; /* Adjust line-height for specific tab */
+}
+
+.sheet-tab2, .sheet-tab3, .sheet-tab99 {
+    line-height: 40px; /* Adjust line-height for specific tabs */
+}
+
+.sheet-tab4 {
+    line-height: 20px; /* Adjust line-height for specific tab */
+}
+
 /*----------- End Tab Setup -----------*/
 
 input.sheet-arrow {
