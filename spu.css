@@ -11,7 +11,6 @@
     src: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Adventure!/assets/fonts/GNUTypewriterStandard.ttf');
     font-weight: normal; 
     font-style: normal;
-}
 
 @font-face {
     font-family: 'WarenhausTypenhebelStandard'; 
@@ -707,7 +706,7 @@ button[type=roll].sheet-weapon:active {
   }
 
 
-  /* Injuries section */
+/* Injuries section */
 .sheet-injury-container {
     display: flex;
     justify-content: space-between;
@@ -732,4 +731,21 @@ button[type=roll].sheet-weapon:active {
 .sheet-injury-threshold {
     margin: 5px 0;
     font-weight: bold;
+}
+
+.sheet-injury-threshold[data-threshold="2"] {
+    color: orange;
+}
+
+.sheet-injury-threshold[data-threshold="4"] {
+    color: red;
+}
+
+.sheet-injury-threshold[data-threshold="6"] {
+    color: darkred;
+}
+
+.sheet-injury-threshold[data-threshold="7"] {
+    color: black;
+}
 }
