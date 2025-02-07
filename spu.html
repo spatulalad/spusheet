@@ -647,33 +647,210 @@
 
             
             </div>
+<!-- Health and Injuries -->
+<div class="health">
+    <h2>Armor & Injuries</h2>
+
+    <div class="dots armor-dots">
+        <input style="width: 40px; margin-right: 5px; display: inline-block; text-align: center" type="number" value="0" min="0" max="5" title="Enter number to increase available Armor boxes" name="attr_armor_max" />
+        <text style="display: inline-block">Armor</text>
+        <input type="hidden" class="armor-toggle" name="attr_toggle_armor1" value="0" />
+        <div align="center" style="margin-left: 39px" class="char-health armor-hide">
+            <input type="checkbox" name="attr_armor1" value="0" />
         </div>
-        
-        <!-- Injuries section -->
-<div class="sheet-center" style="width:100%"><h2>Injuries</h2></div>
-<table class="sheet-grid">
-    <tr>
-        <th>Injury</th>
-        <th>Status</th>
-    </tr>
-    <tr>
-        <td>
-            <input type="checkbox" class="sheet-injury" name="attr_injury1" value="1" /><span></span>
-            <input type="checkbox" class="sheet-injury" name="attr_injury2" value="1" /><span></span>
-            <input type="checkbox" class="sheet-injury" name="attr_injury3" value="1" /><span></span>
-            <input type="checkbox" class="sheet-injury" name="attr_injury4" value="1" /><span></span>
-            <input type="checkbox" class="sheet-injury" name="attr_injury5" value="1" /><span></span>
-            <input type="checkbox" class="sheet-injury" name="attr_injury6" value="1" /><span></span>
-            <input type="checkbox" class="sheet-injury" name="attr_injury7" value="1" /><span></span>
-        </td>
-        <td>
-            <div class="sheet-injury-status">
-                <span class="sheet-injury-threshold" data-threshold="2">Bloodied</span>
-                <span class="sheet-injury-threshold" data-threshold="4">Wounded</span>
-                <span class="sheet-injury-threshold" data-threshold="6">Maimed</span>
-                <span class="sheet-injury-threshold" data-threshold="7">Near Death</span>
-            </div>
-        </td>
-    </tr>
-</table>
+        <input type="hidden" class="armor-toggle" name="attr_toggle_armor2" value="0" />
+        <div align="center" class="char-health armor-hide">
+            <input type="checkbox" name="attr_armor2" value="0" />
+        </div>
+        <input type="hidden" class="armor-toggle" name="attr_toggle_armor3" value="0" />
+        <div align="center" class="char-health armor-hide">
+            <input type="checkbox" name="attr_armor3" value="0" />
+        </div>
+        <input type="hidden" class="armor-toggle" name="attr_toggle_armor4" value="0" />
+        <div align="center" class="char-health armor-hide">
+            <input type="checkbox" name="attr_armor4" value="0" />
+        </div>
+        <input type="hidden" class="armor-toggle" name="attr_toggle_armor5" value="0" />
+        <div align="center" class="char-health armor-hide">
+            <input type="checkbox" name="attr_armor5" value="1" />
+        </div>
+    </div>
+
+    <div class="dots bloodied-dots">
+        <input style="width: 40px; margin-right: 5px; display: inline-block; text-align: center" type="number" value="2" min="0" max="10" title="Enter number to increase available Injury boxes" name="attr_bloodied_max" />
+        <text style="display: inline-block">Injuries</text>
+        <input type="hidden" class="bloodied-toggle" name="attr_toggle_bloodied1" value="0" />
+        <div align="center" style="margin-left: 33px" class="char-health bloodied-hide">
+            <input type="checkbox" name="attr_bloodied1" value="0" />
+        </div>
+        <input type="hidden" class="bloodied-toggle" name="attr_toggle_bloodied2" value="0" />
+        <div align="center" class="char-health bloodied-hide">
+            <input type="checkbox" name="attr_bloodied2" value="0" />
+        </div>
+        <input type="hidden" class="bloodied-toggle" name="attr_toggle_bloodied3" value="0" />
+        <div align="center" class="char-health bloodied-hide">
+            <input type="checkbox" name="attr_bloodied3" value="0" />
+        </div>
+        <input type="hidden" class="bloodied-toggle" name="attr_toggle_bloodied4" value="0" />
+        <div align="center" class="char-health bloodied-hide">
+            <input type="checkbox" name="attr_bloodied4" value="0" />
+        </div>
+        <input type="hidden" class="bloodied-toggle" name="attr_toggle_bloodied5" value="0" />
+        <div align="center" class="char-health bloodied-hide">
+            <input type="checkbox" name="attr_bloodied5" value="1" />
+        </div>
+        <input type="hidden" class="bloodied-toggle" name="attr_toggle_bloodied6" value="0" />
+        <div align="center" class="char-health bloodied-hide">
+            <input type="checkbox" name="attr_bloodied6" value="1" />
+        </div>
+        <input type="hidden" class="bloodied-toggle" name="attr_toggle_bloodied7" value="0" />
+        <div align="center" class="char-health bloodied-hide">
+            <input type="checkbox" name="attr_bloodied7" value="1" />
+        </div>
+        <input type="hidden" class="bloodied-toggle" name="attr_toggle_bloodied8" value="0" />
+        <div align="center" class="char-health bloodied-hide">
+            <input type="checkbox" name="attr_bloodied8" value="1" />
+        </div>
+        <input type="hidden" class="bloodied-toggle" name="attr_toggle_bloodied9" value="0" />
+        <div align="center" class="char-health bloodied-hide">
+            <input type="checkbox" name="attr_bloodied9" value="1" />
+        </div>
+        <input type="hidden" class="bloodied-toggle" name="attr_toggle_bloodied10" value="0" />
+        <div align="center" class="char-health bloodied-hide">
+            <input type="checkbox" name="attr_bloodied10" value="1" />
+        </div>
+    </div>
+
+    <div class="dots wounded-dots">
+        <input style="width: 40px; margin-right: 5px; display: inline-block; text-align: center" type="number" value="2" min="0" max="5" title="Enter number to increase available Wounded boxes" name="attr_wounded_max" />
+        <text style="display: inline-block">Wounded</text>
+        <input type="hidden" class="wounded-toggle" name="attr_toggle_wounded1" value="0" />
+        <div align="center" style="margin-left: 29px" class="char-health wounded-hide">
+            <input type="checkbox" name="attr_wounded1" value="0" />
+        </div>
+        <input type="hidden" class="wounded-toggle" name="attr_toggle_wounded2" value="0" />
+        <div align="center" class="char-health wounded-hide">
+            <input type="checkbox" name="attr_wounded2" value="0" />
+        </div>
+        <input type="hidden" class="wounded-toggle" name="attr_toggle_wounded3" value="0" />
+        <div align="center" class="char-health wounded-hide">
+            <input type="checkbox" name="attr_wounded3" value="0" />
+        </div>
+        <input type="hidden" class="wounded-toggle" name="attr_toggle_wounded4" value="0" />
+        <div align="center" class="char-health wounded-hide">
+            <input type="checkbox" name="attr_wounded4" value="0" />
+        </div>
+        <input type="hidden" class="wounded-toggle" name="attr_toggle_wounded5" value="0" />
+        <div align="center" class="char-health wounded-hide">
+            <input type="checkbox" name="attr_wounded5" value="1" />
+        </div>
+    </div>
+
+    <div class="dots maimed-dots">
+        <input style="width: 40px; margin-right: 5px; display: inline-block; text-align: center" type="number" value="2" min="0" max="5" title="Enter number to increase available Maimed boxes" name="attr_maimed_max" />
+        <text style="display: inline-block">Maimed</text>
+        <input type="hidden" class="maimed-toggle" name="attr_toggle_maimed1" value="0" />
+        <div align="center" style="margin-left: 38px" class="char-health maimed-hide">
+            <input type="checkbox" name="attr_maimed1" value="0" />
+        </div>
+        <input type="hidden" class="maimed-toggle" name="attr_toggle_maimed2" value="0" />
+        <div align="center" class="char-health maimed-hide">
+            <input type="checkbox" name="attr_maimed2" value="0" />
+        </div>
+        <input type="hidden" class="maimed-toggle" name="attr_toggle_maimed3" value="0" />
+        <div align="center" class="char-health maimed-hide">
+            <input type="checkbox" name="attr_maimed3" value="0" />
+        </div>
+        <input type="hidden" class="maimed-toggle" name="attr_toggle_maimed4" value="0" />
+        <div align="center" class="char-health maimed-hide">
+            <input type="checkbox" name="attr_maimed4" value="0" />
+        </div>
+        <input type="hidden" class="maimed-toggle" name="attr_toggle_maimed5" value="0" />
+        <div align="center" class="char-health maimed-hide">
+            <input type="checkbox" name="attr_maimed5" value="1" />
+        </div>
+    </div>
+
+    <div class="dots neardeath-dots">
+        <input style="width: 40px; margin-right: 5px; display: inline-block; text-align: center" type="number" value="1" min="0" max="5" title="Enter number to increase available Near Death boxes" name="attr_neardeath_max" />
+        <text style="display: inline-block">Near Death</text>
+        <input type="hidden" class="neardeath-toggle" name="attr_toggle_neardeath1" value="0" />
+        <div align="center" style="margin-left: 20px" class="char-health neardeath-hide">
+            <input type="checkbox" name="attr_neardeath1" value="0" />
+        </div>
+        <input type="hidden" class="neardeath-toggle" name="attr_toggle_neardeath2" value="0" />
+        <div align="center" class="char-health neardeath-hide">
+            <input type="checkbox" name="attr_neardeath2" value="0" />
+        </div>
+        <input type="hidden" class="neardeath-toggle" name="attr_toggle_neardeath3" value="0" />
+        <div align="center" class="char-health neardeath-hide">
+            <input type="checkbox" name="attr_neardeath3" value="0" />
+        </div>
+        <input type="hidden" class="neardeath-toggle" name="attr_toggle_neardeath4" value="0" />
+        <div align="center" class="char-health neardeath-hide">
+            <input type="checkbox" name="attr_neardeath4" value="0" />
+        </div>
+        <input type="hidden" class="neardeath-toggle" name="attr_toggle_neardeath5" value="0" />
+        <div align="center" class="char-health neardeath-hide">
+            <input type="checkbox" name="attr_neardeath5" value="1" />
+        </div>
+    </div>
 </div>
+
+        </div>
+        <script type="text/worker">
+            on('change:armor_max sheet:opened', () => {
+                getAttrs(['armor_max'], values => {
+                    const output = {};
+                    const max = +values.armor_max || 0;
+                    for(let n = 0; n <= 5; n++) {
+                        output[`toggle_armor${n}`] = n <= max ? 1 : 0;
+                    }
+                    setAttrs(output);
+                });
+            });
+        
+            on('change:bloodied_max sheet:opened', () => {
+                getAttrs(['bloodied_max'], values => {
+                    const output = {};
+                    const max = +values.bloodied_max || 0;
+                    for(let n = 0; n <= 10; n++) {
+                        output[`toggle_bloodied${n}`] = n <= max ? 1 : 0;
+                    }
+                    setAttrs(output);
+                });
+            });
+        
+            on('change:wounded_max sheet:opened', () => {
+                getAttrs(['wounded_max'], values => {
+                    const output = {};
+                    const max = +values.wounded_max || 0;
+                    for(let n = 0; n <= 5; n++) {
+                        output[`toggle_wounded${n}`] = n <= max ? 1 : 0;
+                    }
+                    setAttrs(output);
+                });
+            });
+        
+            on('change:maimed_max sheet:opened', () => {
+                getAttrs(['maimed_max'], values => {
+                    const output = {};
+                    const max = +values.maimed_max || 0;
+                    for(let n = 0; n <= 5; n++) {
+                        output[`toggle_maimed${n}`] = n <= max ? 1 : 0;
+                    }
+                    setAttrs(output);
+                });
+            });
+        
+            on('change:neardeath_max sheet:opened', () => {
+                getAttrs(['neardeath_max'], values => {
+                    const output = {};
+                    const max = +values.neardeath_max || 0;
+                    for(let n = 0; n <= 5; n++) {
+                        output[`toggle_neardeath${n}`] = n <= max ? 1 : 0;
+                    }
+                    setAttrs(output);
+                });
+            });
+        </script>
