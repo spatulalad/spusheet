@@ -408,7 +408,7 @@
                     <th><h5>Modifier</h5></th>
                 </tr>
                 <tr>
-                    <td><button type='roll' class="sheet-weapon" value='/em @{character_name} rolls @{dice_pool_1-name} [[{(@{dice_pool_1-attribute} + @{dice_pool_1-skill} + @{dice_pool_1-modifier})d10!}>7]] success(es)'/></td> 
+                    <td><button type='roll' class="sheet-weapon" value='/w @{character_name} rolls @{dice_pool_1-name} [[{(@{dice_pool_1-attribute} + @{dice_pool_1-skill} + @{dice_pool_1-modifier})d10}>8]] success(es)'/></td> 
                     <td><input type="text" class="sheet-textbox" name="attr_dice_pool_1-name" placeholder="Name"/></td>
                     <th><select class="sheet-textbox" name="attr_dice_pool_1-attribute" style="width:100px">
                         <option value="0"></option>
@@ -453,7 +453,7 @@
                     <th><input type="number" class="sheet-textbox" name="attr_dice_pool_1-modifier" value="0"/></th>
                 </tr>
                 <tr>
-                    <td><button type='roll' class="sheet-weapon" value='/em @{character_name} rolls @{dice_pool-2-name} [[{(@{dice_pool_2-attribute} + @{dice_pool_2-skill} + @{dice_pool_2-modifier})d10!}>7]] success(es)'/></td> 
+                    <td><button type='roll' class="sheet-weapon" value='/w @{character_name} rolls @{dice_pool-2-name} [[{(@{dice_pool_2-attribute} + @{dice_pool_2-skill} + @{dice_pool_2-modifier})d10}>8]] success(es)'/></td> 
                     <td><input type="text" class="sheet-textbox" name="attr_dice_pool-2-name" placeholder="Name"/></td>
                     <th><select class="sheet-textbox" name="attr_dice_pool_2-attribute" style="width:100px">
                         <option value="0"></option>
@@ -498,7 +498,7 @@
                     <th><input type="number" class="sheet-textbox" name="attr_dice_pool_2-modifier" value="0"/></th>
                 </tr>
                 <tr>
-                    <td><button type='roll' class="sheet-weapon" value='/em @{character_name} rolls @{dice_pool_3-name} [[{(@{dice_pool_3-attribute} + @{dice_pool_3-skill} + @{dice_pool_3-modifier})d10!}>7]] success(es)'/></td> 
+                    <td><button type='roll' class="sheet-weapon" value='/w @{character_name} rolls @{dice_pool_3-name} [[{(@{dice_pool_3-attribute} + @{dice_pool_3-skill} + @{dice_pool_3-modifier})d10}>8]] success(es)'/></td>
                     <td><input type="text" class="sheet-textbox" name="attr_dice_pool_3-name" placeholder="Name"/></td>
                     <th><select class="sheet-textbox" name="attr_dice_pool_3-attribute" style="width:100px">
                         <option value="0"></option>
@@ -543,7 +543,7 @@
                     <th><input type="number" class="sheet-textbox" name="attr_dice_pool_3-modifier" value="0"/></th>
                 </tr>
                 <tr>
-                    <td><button type='roll' class="sheet-weapon" value='/em @{character_name} rolls @{dice_pool_4-name} [[{(@{dice_pool_4-attribute} + @{dice_pool_4-skill} + @{dice_pool_4-modifier})d10!}>7]] success(es)'/></td> 
+                    <td><button type='roll' class="sheet-weapon" value='/w @{character_name} rolls @{dice_pool_4-name} [[{(@{dice_pool_4-attribute} + @{dice_pool_4-skill} + @{dice_pool_4-modifier})d10}>8]] success(es)'/></td> 
                     <td><input type="text" class="sheet-textbox" name="attr_dice_pool_4-name" placeholder="Name"/></td>
                     <th><select class="sheet-textbox" name="attr_dice_pool_4-attribute" style="width:100px">
                         <option value="0"></option>
@@ -588,7 +588,7 @@
                     <th><input type="number" class="sheet-textbox" name="attr_dice_pool_4-modifier" value="0"/></th>
                 </tr>
                 <tr>
-                    <td><button type='roll' class="sheet-weapon" value='/em @{character_name} rolls @{dice_pool-5-name} [[{(@{dice_pool_5-attribute} + @{dice_pool_5-skill} + @{dice_pool_5-modifier})d10!}>7]] success(es)'/></td>
+                    <td><button type='roll' class="sheet-weapon" value='/w @{character_name} rolls @{dice_pool-5-name} [[{(@{dice_pool_5-attribute} + @{dice_pool_5-skill} + @{dice_pool_5-modifier})d10}>8]] success(es)'/></td>
                     <td><input type="text" class="sheet-textbox" name="attr_dice_pool-5-name" placeholder="Name"/></td>
                     <th><select class="sheet-textbox" name="attr_dice_pool_5-attribute" style="width:100px">
                         <option value="0"></option>
@@ -603,51 +603,6 @@
                         <option value="@{Composure}">Composure</option></select>
                     </th>
                     <th><select class="sheet-textbox" name="attr_dice_pool_5-skill" style="width:120px">
-                        <option value="0"></option>
-                        <option value="@{Artistry}">Artistry</option>
-                        <option value="@{Athletics}">Athletics</option>
-                        <option value="@{Close_Combat}">Close Combat</option>
-                        <option value="@{Culture}">Culture</option>
-                        <option value="@{Empathy}">Empathy</option>
-                        <option value="@{Esoterica}">Esoterica</option>
-                        <option value="@{Larceny}">Larceny</option>
-                        <option value="@{Leadership}">Leadership</option>
-                        <option value="@{Medicine}">Medicine</option>
-                        <option value="@{Melee}">Melee</option>
-                        <option value="@{Persuasion}">Persuasion</option>
-                        <option value="@{Pilot}">Pilot</option>
-                        <option value="@{Ranged_Combat}">Ranged Combat</option>
-                        <option value="@{Science}">Science</option>
-                        <option value="@{Survival}">Survival</option>
-                        <option value="@{Technology}">Technology</option>
-                        <option value="@{Other1}">Other1</option>
-                        <option value="@{Other2}">Other2</option>
-                        <option value="@{Other3}">Other3</option>
-                        <option value="@{Other4}">Other4</option>
-                        <option value="@{Other5}">Other5</option>
-                        <option value="@{Other6}">Other6</option>
-                        <option value="@{Other7}">Other7</option>
-                        <option value="@{Other8}">Other8</option>
-                        <option value="@{Other9}">Other9</option></select>
-                    </th>
-                    <th><input type="number" class="sheet-textbox" name="attr_dice_pool_5-modifier" value="0"/></th>
-                </tr>
-                <tr>
-                    <td><button type='roll' class="sheet-weapon" value='/em @{character_name} rolls @{dice_pool-6-name} [[{(@{dice_pool_6-attribute} + @{dice_pool_6-skill} + @{dice_pool_6-modifier})d10!}>7]] success(es)'/></td>
-                    <td><input type="text" class="sheet-textbox" name="attr_dice_pool-6-name" placeholder="Name"/></td>
-                    <th><select class="sheet-textbox" name="attr_dice_pool_6-attribute" style="width:100px">
-                        <option value=""></option>
-                        <option value="@{Intellect}">Intellect</option>
-                        <option value="@{Might}">Might</option>
-                        <option value="@{Presence}">Presence</option>
-                        <option value="@{Cunning}">Cunning</option>
-                        <option value="@{Dexterity}">Dexterity</option>
-                        <option value="@{Manipulation}">Manipulation</option>
-                        <option value="@{Resolve}">Resolve</option>
-                        <option value="@{Stamina}">Stamina</option>
-                        <option value="@{Composure}">Composure</option></select>
-                    </th>
-                    <th><select class="sheet-textbox" name="attr_dice_pool_6-skill" style="width:120px">
                         <option value="0"></option>
                         <option value="@{Artistry}">Artistry</option>
                         <option value="@{Athletics}">Athletics</option>
