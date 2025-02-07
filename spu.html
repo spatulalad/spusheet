@@ -366,7 +366,6 @@
                     <input type="text" name="attr_edge" class="feature-label" placeholder="Edge Name" >
 
                     <!-- Collapsible section -->
-                    <input type="hidden" class="toggle-more" name="attr_more" value="0" /><button type="action" name="act_toggle"><span class="more" data-i18n="more">More</span><span class="less" data-i18n="less">Less</span></button>
                     <div class="expandable">
                         <div class="sheet-row">
                             <input type="radio" class="sheet-normal" name="attr_rating" value="1" /><span></span>
@@ -379,7 +378,7 @@
                             <input type="radio" class="sheet-normal" name="attr_rating" value="5" />
                             <span></span>
                             <input type="text" name="attr_edge-details" placeholder="Edge Detail" style="width:300px">
-                            <button type="roll" name="roll_Print" class="details-roll" value="@{whisper} {{character=@{character_name}}} {{name=@{edge}}+} @{edge-details}" title="Edge Detail" ></button>
+                            <button type="roll" name="roll_Print" class="details-roll" value="&{template:default} {@{edge}} {@{edge-details}}" title="Edge Detail" ></button>
                         </div>
                     </div>
                     <!-- Collapsible section -->
