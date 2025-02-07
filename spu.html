@@ -370,7 +370,7 @@
                         </table>
             <div class="sheet-center" style="width:100%"><h2>Edges</h2></div>
             <fieldset class="repeating_edges">
-                <input type="text" name="attr_edge" class="feature-label" placeholder="Edge Name" >
+                <input type="text" name="attr_edge" class="feature-label" placeholder="Edge Name" value="0">
                 <!-- Collapsible section -->
                 <div class="expandable">
                     <div class="sheet-row">
@@ -418,7 +418,7 @@
                     <th><h5>Modifier</h5></th>
                 </tr>
                 <tr>
-                    <td><button type='roll' class="sheet-weapon" value='@{emote} &{template:default} @{character_name} rolls @{dice_pool_1-name} [[{(@{dice_pool_1-attribute} + @{dice_pool_1-skill} + @{dice_pool_1-modifier})d10}>8]] success(es)'/></td> 
+                    <td><button type='roll' class="sheet-weapon" value='@{emote} &{template:default} {{character=@{character_name}}} {{name=@{dice_pool_1-name}}} {{roll=[[{(@{dice_pool_1-attribute} + @{dice_pool_1-skill} + @{dice_pool_1-modifier})d10}>8]]}} success(es)'/></td> 
                     <td><input type="text" class="sheet-textbox" name="attr_dice_pool_1-name" placeholder="Name"/></td>
                     <th><select class="sheet-textbox" name="attr_dice_pool_1-attribute" style="width:100px">
                         <option value="0"></option>
