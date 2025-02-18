@@ -5,45 +5,57 @@
     background-size:100%;
 }
 
-/*-----text-----*/
-@font-face {
-    font-family: 'GNUTypewriter'; 
-    src: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Adventure!/assets/fonts/GNUTypewriterStandard.ttf');
-    font-weight: normal; 
-    font-style: normal;
+/*---fonts----*/
 
-@font-face {
-    font-family: 'WarenhausTypenhebelStandard'; 
-    src: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Adventure!/assets/fonts/WarenhausTypenhebelStandard.otf');
-    font-weight: normal; 
-    font-style: normal;
+:root {
+    --sheet-font: 'Roboto', 'Arial', sans-serif;
 }
-    text-shadow: none;
-    color:black;
+
+body {
+    font-family: var(--sheet-font);
 }
+
+
+
+/*-----text-----*/
+/*@font-face {*/
+/*    font-family: 'GNUTypewriter'; */
+/*    src: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Adventure!/assets/fonts/GNUTypewriterStandard.ttf');*/
+/*    font-weight: normal; */
+/*    font-style: normal;*/
+
+/*@font-face {*/
+/*    font-family: 'WarenhausTypenhebelStandard'; */
+/*    src: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Adventure!/assets/fonts/WarenhausTypenhebelStandard.otf');*/
+/*    font-weight: normal; */
+/*    font-style: normal;*/
+/*}*/
+/*    !*!*text-shadow: none;*!*!*/
+/*    !*color:black;*!*/
+/*}*/
 
 th {
-    text-shadow: none;
+    /*text-shadow: none;*/
     color:black;
-    font-family: 'WarenhausTypenhebelStandard';
+    /*font-family: 'WarenhausTypenhebelStandard';*/
     font-weight:400;
 }
 
 h4 {
-    text-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white;
+    /*text-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white;*/
     color:black;
     text-shadow:none;
 }
 
 h3 {
     color:black;
-    font-family: 'GNUTypewriter';
+    /*font-family: 'GNUTypewriter';*/
     font-size:1.4em;
 }
 
 h2 {
     color:black;
-    font-family: 'GNUTypewriter';
+    /*font-family: 'GNUTypewriter';*/
     font-weight:400;
     text-shadow:none;
 }
@@ -51,7 +63,7 @@ h2 {
 .charsheet {
     text-shadow: none;
     color:black;
-    font-family: 'WarenhausTypenhebelStandard';
+    /*font-family: 'WarenhausTypenhebelStandard';*/
     font-size:0.83em;
 }
 
@@ -101,7 +113,7 @@ select {
     -moz-user-select: none;
     -webkit-padding-end: 00px;
     -moz-padding-end: 00px;
-    font-family: 'WarenhausTypenhebelStandard';
+    /*font-family: 'WarenhausTypenhebelStandard';*/
 
 }
     .sheet-injury-tracker {
@@ -181,15 +193,15 @@ div.sheet-core-content {
     width:840px;
 }
 
-.charsheet div[class^="sheet-section"] {
-    display: none;
-    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Adventure!/assets/images/15L8aEI.jpg');
-    background-size:100%;
-    padding-left:26px;
-    padding-right:26px;
-    padding-top:20px;
-    height:1047px;
-}
+/*.charsheet div[class^="sheet-section"] {*/
+/*    display: none;*/
+/*    background: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Adventure!/assets/images/15L8aEI.jpg');*/
+/*    background-size:100%;*/
+/*    padding-left:26px;*/
+/*    padding-right:26px;*/
+/*    padding-top:20px;*/
+/*    height:1047px;*/
+/*}*/
 
 .charsheet input.sheet-tab1:checked ~ div.sheet-section-1,
 .charsheet input.sheet-tab2:checked ~ div.sheet-section-2,
@@ -567,7 +579,7 @@ button[type=roll].sheet-adv {
     height:28px;
     width:100%;
     border: none;
-    padding:none;
+    /*padding:none;*/
 }
 
 button[type=roll].sheet-adv:hover {
@@ -602,7 +614,7 @@ button[type=roll].sheet-big {
     height:28px;
     width:100%;
     border: none;
-    padding:none;
+    /*padding:none;*/
 }
 
 button[type=roll].sheet-big:hover {
@@ -628,8 +640,6 @@ button[type=roll].sheet-skill:before {
 button[type=roll].sheet-skill {
     background-image: none;
     background: transparent;
-    font-family:"GNUTypewriter";
-    color:black;
     font-size:1em;
     font-weight:400;
     border-radius: 6px;
@@ -637,7 +647,7 @@ button[type=roll].sheet-skill {
     height:20px;
     width:100%;
     border: none;
-    padding:none;
+    /*padding:none;*/
 }
 
 button[type=roll].sheet-skill:hover {
@@ -663,7 +673,6 @@ button[type=roll].sheet-weapon:before {
 button[type=roll].sheet-weapon {
     background-image: none;
     background: transparent;
-    font-family:"GNUTypewriter";
     color:black;
     font-size:1em;
     font-weight:400;
@@ -672,7 +681,7 @@ button[type=roll].sheet-weapon {
     height:19px;
     width:19px;
     border: 1px solid black;
-    padding:none;
+    /*padding:none;*/
 }
 
 button[type=roll].sheet-weapon:hover {
@@ -734,5 +743,3 @@ button[type=roll].sheet-weapon:active {
 
 /*-----textareas-----*/
 
-
-}

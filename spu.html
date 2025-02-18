@@ -1,22 +1,25 @@
 <!-- Set up the Tabs -->
-<form>
-    <input type="radio" class="sheet-tab sheet-tab1" name="attr_core-tab" value="1" title="Skills & Attributes" checked="checked"/>
-    <span class="sheet-tab sheet-tab1 line-height-20">Skills & Attributes</span>
-    <input type="radio" class="sheet-tab sheet-tab2" name="attr_core-tab" value="2" title="Edges" />
-    <span class="sheet-tab sheet-tab2 line-height-40">Edges</span>
-    <input type="radio" class="sheet-tab sheet-tab3" name="attr_core-tab" value="3" title="Gifts" />
-    <span class="sheet-tab sheet-tab3 line-height-40">Gifts</span>
-    <input type="radio" class="sheet-tab sheet-tab4" name="attr_core-tab" value="4" title="Combat & Gear" /> 
-    <span class="sheet-tab sheet-tab4 line-height-20">Combat & <br>Gear</span>
-    <input type="radio" class="sheet-tab sheet-tab99" name="attr_core-tab" value="99" title="All" />
-    <span class="sheet-tab sheet-tab99 line-height-40">All</span>
-</form>
-<!-- End Tab setup -->
+<!--<form>-->
+<!--    <input type="radio" class="sheet-tab sheet-tab1" name="attr_core-tab" value="1" title="Skills & Attributes" checked="checked"/>-->
+<!--    <span class="sheet-tab sheet-tab1 line-height-20">Skills & Attributes</span>-->
+<!--    <input type="radio" class="sheet-tab sheet-tab2" name="attr_core-tab" value="2" title="Edges" />-->
+<!--    <span class="sheet-tab sheet-tab2 line-height-40">Edges</span>-->
+<!--    <input type="radio" class="sheet-tab sheet-tab3" name="attr_core-tab" value="3" title="Gifts" />-->
+<!--    <span class="sheet-tab sheet-tab3 line-height-40">Gifts</span>-->
+<!--    <input type="radio" class="sheet-tab sheet-tab4" name="attr_core-tab" value="4" title="Combat & Gear" /> -->
+<!--    <span class="sheet-tab sheet-tab4 line-height-20">Combat & <br>Gear</span>-->
+<!--    <input type="radio" class="sheet-tab sheet-tab99" name="attr_core-tab" value="99" title="All" />-->
+<!--    <span class="sheet-tab sheet-tab99 line-height-40">All</span>-->
+<!--</form>-->
+<!--&lt;!&ndash; End Tab setup &ndash;&gt;-->
 
 <!-- Define the whisper attribute -->
 <!-- <input type="hidden" name="attr_whisper" value="/w GM" /> -->
 <!-- Define the emote attribute for public chat -->
 <input type="hidden" name="attr_emote" value="/em" />
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 
 <!-- Tab1 -->
 <div class="sheet-section-1">
@@ -405,8 +408,6 @@
 
 </table>
 
-
-
             <!-- Uncommon Dice Pools -->
             <hr>
             <h2 class="sheet-center">Uncommon Dice Pools</h2>
@@ -464,8 +465,8 @@
                     <th><input type="number" class="sheet-textbox" name="attr_dice_pool_1-modifier" value="0"/></th>
                 </tr>
                 <tr>
-                    <td><button type='roll' class="sheet-weapon" value='@{emote} &{template:default} @{character_name} rolls @{dice_pool-2-name} [[{(@{dice_pool_2-attribute} + @{dice_pool_2-skill} + @{dice_pool_2-modifier})d10}>8]] success(es)'/></td> 
-                    <td><input type="text" class="sheet-textbox" name="attr_dice_pool-2-name" placeholder="Name"/></td>
+                    <td><button type='roll' class="sheet-weapon" value='@{emote} &{template:default} {{character=@{character_name}}} {{name=@{dice_pool_2-name}}} {{roll=[[{(@{dice_pool_2-attribute} + @{dice_pool_2-skill} + @{dice_pool_2-modifier})d10}>8]]}} success(es)'/></td>
+                    <td><input type="text" class="sheet-textbox" name="attr_dice_pool_2-name" placeholder="Name"/></td>
                     <th><select class="sheet-textbox" name="attr_dice_pool_2-attribute" style="width:100px">
                         <option value="0"></option>
                         <option value="@{Intellect}">Intellect</option>
@@ -509,7 +510,7 @@
                     <th><input type="number" class="sheet-textbox" name="attr_dice_pool_2-modifier" value="0"/></th>
                 </tr>
                 <tr>
-                    <td><button type='roll' class="sheet-weapon" value='@{emote} &{template:default}  @{character_name} rolls @{dice_pool_3-name} [[{(@{dice_pool_3-attribute} + @{dice_pool_3-skill} + @{dice_pool_3-modifier})d10}>8]] success(es)'/></td>
+                    <td><button type='roll' class="sheet-weapon" value='@{emote} &{template:default} {{character=@{character_name}}} {{name=@{dice_pool_3-name}}} {{roll=[[{(@{dice_pool_3-attribute} + @{dice_pool_3-skill} + @{dice_pool_3-modifier})d10}>8]]}} success(es)'/></td>
                     <td><input type="text" class="sheet-textbox" name="attr_dice_pool_3-name" placeholder="Name"/></td>
                     <th><select class="sheet-textbox" name="attr_dice_pool_3-attribute" style="width:100px">
                         <option value="0"></option>
@@ -554,7 +555,7 @@
                     <th><input type="number" class="sheet-textbox" name="attr_dice_pool_3-modifier" value="0"/></th>
                 </tr>
                 <tr>
-                    <td><button type='roll' class="sheet-weapon" value='@{emote} &{template:default} @{character_name} rolls @{dice_pool_4-name} [[{(@{dice_pool_4-attribute} + @{dice_pool_4-skill} + @{dice_pool_4-modifier})d10}>8]] success(es)'/></td> 
+                    <td><button type='roll' class="sheet-weapon" value='@{emote} &{template:default} {{character=@{character_name}}} {{name=@{dice_pool_4-name}}} {{roll=[[{(@{dice_pool_4-attribute} + @{dice_pool_4-skill} + @{dice_pool_4-modifier})d10}>8]]}} success(es)'/></td>
                     <td><input type="text" class="sheet-textbox" name="attr_dice_pool_4-name" placeholder="Name"/></td>
                     <th><select class="sheet-textbox" name="attr_dice_pool_4-attribute" style="width:100px">
                         <option value="0"></option>
@@ -599,8 +600,8 @@
                     <th><input type="number" class="sheet-textbox" name="attr_dice_pool_4-modifier" value="0"/></th>
                 </tr>
                 <tr>
-                    <td><button type='roll' class="sheet-weapon" value='@{emote} &{template:default}  @{character_name} rolls @{dice_pool-5-name} [[{(@{dice_pool_5-attribute} + @{dice_pool_5-skill} + @{dice_pool_5-modifier})d10}>8]] success(es)'/></td>
-                    <td><input type="text" class="sheet-textbox" name="attr_dice_pool-5-name" placeholder="Name"/></td>
+                    <td><button type='roll' class="sheet-weapon" value='@{emote} &{template:default} {{character=@{character_name}}} {{name=@{dice_pool_5-name}}} {{roll=[[{(@{dice_pool_5-attribute} + @{dice_pool_5-skill} + @{dice_pool_5-modifier})d10}>8]]}} success(es)'/></td>
+                    <td><input type="text" class="sheet-textbox" name="attr_dice_pool_5-name" placeholder="Name"/></td>
                     <th><select class="sheet-textbox" name="attr_dice_pool_5-attribute" style="width:100px">
                         <option value="0"></option>
                         <option value="@{Intellect}">Intellect</option>
